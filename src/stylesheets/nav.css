@@ -1,0 +1,53 @@
+.Nav {
+  position: absolute;
+  z-index: 5000;
+  min-height: 200px;
+  min-width: 100%;
+  background-color: rgb(15, 15, 15, 15);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.logo-container {
+  min-width: 33.5%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container > img {
+  max-width:300px;
+}
+
+.user-buttons {
+  min-width: 66.5%;
+  min-height: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.user-buttons-left,
+.user-buttons-right {
+  min-width: 50%;
+  max-width: 50%;
+  min-height: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.user-buttons-left {
+}
+
+.user-buttons-right {
+}
+
+.nav-button {
+  min-height: 100%;
+  min-width: 50%;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

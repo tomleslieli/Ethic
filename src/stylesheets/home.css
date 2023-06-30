@@ -1,0 +1,137 @@
+.Main {
+  min-height: 100vh;
+  min-width: 100%;
+  transform: translate(0px, 300px);
+  overflow: hidden;
+}
+
+.home-top {
+  min-height: 400px;
+  max-height: 400px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.home-top-left {
+  min-height: 400px;
+  min-width: 66.5%;
+  max-width: 66.5%;
+}
+
+.home-top-left {
+  object-fit: cover;
+  overflow: hidden;
+  justify-content: flex-start;
+}
+
+.home-top-left > img {
+  opacity: 25%;
+  z-index: 10;
+}
+
+.home-top-left::after {
+  z-index: 11;
+  position: absolute;
+  display: block;
+  content: "";
+  margin-top: 200px;
+  box-shadow: inset 0px 0px 150px 0 rgb(15, 15, 15);
+  top: 0;
+  width: 66.5%;
+  height: 400px;
+  transform: translate(0px, -200px);
+}
+
+.home-top-left-buttons {
+  z-index: 20;
+  min-width: 66.5%;
+  min-height: 400px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-top-left-circles {
+    z-index: 15;
+    min-width: 66.5%;
+    min-height: 400px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+}
+
+.home-top-left-buttons > .fa-solid {
+  margin-left: 25px;
+  margin-right: 25px;
+  opacity: 50%;
+}
+
+.home-top-left-circles > .fa-regular,
+.home-top-left-circles > .fa-solid {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    opacity: 50%;
+  }
+
+.home-top-left-buttons > .fa-solid:hover,
+.home-top-left-circles > .fa-regular:hover,
+.home-top-left-circles > .fa-solid:hover {
+    opacity: 100%;
+}
+
+.home-top-left-text {
+  z-index: 12;
+  min-width: 66.5%;
+  min-height: 400px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.home-top-left-text > h2 {
+  font-family: trocchi;
+  font-weight: 100;
+  font-size: 65px;
+  color: transparent;
+  text-shadow: 0 0 0 rgb(250, 182, 23);
+}
+
+.home-top-left-text > h3 {
+  position: absolute;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: trocchi;
+  margin-bottom: 200px;
+}
+
+.home-top-right {
+  min-height: 400px;
+  min-width: 33.5%;
+  max-width: 33.5%;
+  background-color:antiquewhite;
+}
+
+.home-bottom {
+  min-height: 400px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.home-bottom-left {
+  min-height: 400px;
+  min-width: 33.5%;
+  background-color:blueviolet;
+}
+
+.home-bottom-right {
+  min-height: 400px;
+  min-width: 66.5%;
+  background-color:rgb(43, 226, 101);
+}

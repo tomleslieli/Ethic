@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  overflow: hidden;
+  display: flex;
 }
 
 .App-logo {
@@ -35,4 +37,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.fa-solid, .fa-regular {
+  color: white;
+  transition:.5s ease;
+  cursor: pointer;
+}
+
+.fa-regular:hover, .fa-solid:hover, .leafery-logo:hover {
+  color: rgb(250, 182, 23);
+  fill: rgb(250, 182, 23);
+  transition:.5s ease;
+}
+
+.fa-solid:hover {
+  transform: scale(1.2);
 }
